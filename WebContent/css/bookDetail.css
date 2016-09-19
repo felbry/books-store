@@ -1,0 +1,185 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 30px; }
+  body .header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 3px solid #FF2832;
+    padding: 0px 5px;
+    margin-bottom: 30px; }
+    body .header .title {
+      padding: 5px 10px;
+      background-color: #FF2832;
+      color: white; }
+      body .header .title:hover {
+        cursor: pointer; }
+    body .header .message {
+      position: relative;
+      z-index: 2; }
+      body .header .message:hover {
+        cursor: pointer; }
+    body .header .options {
+      position: absolute;
+      display: none;
+      top: 45px;
+      font-size: 16px;
+      box-shadow: 5px 5px 2px grey; }
+      body .header .options div {
+        padding: 8px 5px;
+        text-align: center;
+        border: 1px solid grey; }
+        body .header .options div:hover {
+          background-color: grey;
+          cursor: pointer; }
+  body .cart {
+    position: fixed;
+    right: 25px;
+    bottom: 25px; }
+    body .cart .cart-font {
+      font-family: cart-font !important;
+      font-size: 45px;
+      font-style: normal; }
+      body .cart .cart-font:hover {
+        cursor: pointer; }
+  body .sidebar {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: -250px;
+    bottom: 0;
+    background-color: #E6E6E6;
+    width: 250px;
+    transition: right 0.5s;
+    display: flex;
+    flex-direction: column; }
+    body .sidebar .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      background-color: pink; }
+      body .sidebar .top:hover {
+        cursor: pointer; }
+    body .sidebar .mid {
+      flex-grow: 1; }
+      body .sidebar .mid .good {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px;
+        padding: 8px;
+        background-color: white; }
+        body .sidebar .mid .good .title {
+          padding: 5px;
+          border-bottom: 1px solid green; }
+        body .sidebar .mid .good .detail {
+          display: flex;
+          padding: 5px 0px;
+          justify-content: space-between; }
+          body .sidebar .mid .good .detail .num {
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            body .sidebar .mid .good .detail .num .minus-add {
+              font-family: minus-add-font;
+              font-size: 20px;
+              font-style: normal; }
+              body .sidebar .mid .good .detail .num .minus-add:hover {
+                cursor: pointer; }
+            body .sidebar .mid .good .detail .num .count {
+              margin: 0px 5px;
+              width: 24px;
+              display: flex;
+              justify-content: center; }
+          body .sidebar .mid .good .detail .totalprice {
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+          body .sidebar .mid .good .detail .delbtn {
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            body .sidebar .mid .good .detail .delbtn button {
+              background-color: red;
+              border: 2px solid #555555;
+              color: black;
+              padding: 3px 5px;
+              text-align: center;
+              cursor: pointer; }
+    body .sidebar .bottom {
+      display: flex;
+      flex-direction: column;
+      background-color: pink; }
+      body .sidebar .bottom .total {
+        display: flex;
+        justify-content: space-around;
+        height: 30px;
+        padding: 5px 0px;
+        font-size: 15px; }
+        body .sidebar .bottom .total .totalprice {
+          color: #C81C1C; }
+      body .sidebar .bottom .settlementbtn {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #C40000; }
+        body .sidebar .bottom .settlementbtn:hover {
+          cursor: pointer; }
+  body .body {
+    display: flex;
+    padding: 0 65px; }
+    @media screen and (max-width: 500px) {
+      body .body {
+        padding: 0;
+        flex-direction: column;
+        align-items: center; } }
+    body .body div:not(.face) {
+      padding: 8px 0px; }
+    body .body .face {
+      display: flex;
+      width: 30%;
+      justify-content: center; }
+      body .body .face image {
+        flex: auto; }
+    body .body .info {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 50px; }
+    body .body .original {
+      display: flex;
+      font-size: 10px; }
+      body .body .original :first-child {
+        margin-right: 30px; }
+    body .body .add {
+      display: flex; }
+      body .body .add .nums {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px; }
+        body .body .add .nums .minus-add {
+          font-family: minus-add-font;
+          font-size: 20px;
+          font-style: normal; }
+          body .body .add .nums .minus-add:hover {
+            cursor: pointer; }
+        body .body .add .nums .counts {
+          margin: 0px 5px;
+          width: 24px;
+          display: flex;
+          justify-content: center; }
+    body .body .atc {
+      display: flex;
+      align-items: center; }
+      body .body .atc button {
+        padding: 5px 10px;
+        background-color: red;
+        border: 1px solid red;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white; }

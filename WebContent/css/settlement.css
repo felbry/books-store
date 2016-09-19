@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 30px; }
+  body .header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 3px solid #FF2832;
+    padding: 0px 5px;
+    margin-bottom: 30px; }
+    body .header .title {
+      padding: 5px 10px;
+      background-color: #FF2832;
+      color: white; }
+      body .header .title:hover {
+        cursor: pointer; }
+    body .header .message {
+      position: relative;
+      z-index: 2; }
+      body .header .message:hover {
+        cursor: pointer; }
+    body .header .options {
+      position: absolute;
+      display: none;
+      top: 45px;
+      font-size: 16px;
+      box-shadow: 5px 5px 2px grey; }
+      body .header .options div {
+        padding: 8px 5px;
+        text-align: center;
+        border: 1px solid grey; }
+        body .header .options div:hover {
+          background-color: grey;
+          cursor: pointer; }
+  body .body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    body .body .banner {
+      border-left: 5px solid green;
+      padding-left: 15px; }
+    body .body .good {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0px; }
+      body .body .good div {
+        display: flex;
+        width: 20%; }
+      body .body .good .title {
+        flex-wrap: wrap; }
+    body .body .total {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px; }
+      body .body .total .info {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center; }
+        body .body .total .info input {
+          padding: 6px 4px;
+          border: 2px solid #ccc;
+          transition: 0.5s; }
+          body .body .total .info input:focus {
+            border: 2px solid #555; }
+      body .body .total .p {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      body .body .total .sub {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body .body .total .sub button {
+          background-color: white;
+          border: 2px solid #555555;
+          color: black;
+          padding: 10px 32px;
+          text-align: center;
+          transition-duration: 0.4s;
+          cursor: pointer; }
+          body .body .total .sub button:hover {
+            background-color: #555555;
+            color: white; }

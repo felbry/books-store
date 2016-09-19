@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/bg/2.jpg"); }
+
+.collapse {
+  display: flex;
+  flex-direction: column; }
+  .collapse .enter {
+    display: flex;
+    flex-direction: column; }
+    .collapse .enter label {
+      display: block;
+      padding: 10px 0px; }
+    .collapse .enter input {
+      display: block;
+      padding: 6px 4px;
+      border: 2px solid #ccc;
+      transition: 0.5s; }
+      .collapse .enter input:focus {
+        border: 2px solid #555; }
+  .collapse .btn-team {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8px; }
+    .collapse .btn-team .btn {
+      width: 100%;
+      background-color: white;
+      border: 2px solid #555555;
+      color: black;
+      padding: 10px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer; }
+      .collapse .btn-team .btn:hover {
+        background-color: #555555;
+        color: white; }
+  .collapse .warning {
+    justify-content: center;
+    margin-top: 12px;
+    display: none; }
+    .collapse .warning small {
+      font-size: 14px;
+      color: red; }

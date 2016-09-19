@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 30px; }
+  body .header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 3px solid #FF2832;
+    padding: 0px 5px;
+    margin-bottom: 30px; }
+    body .header .title {
+      padding: 5px 10px;
+      background-color: #FF2832;
+      color: white; }
+      body .header .title:hover {
+        cursor: pointer; }
+    body .header .message {
+      position: relative;
+      z-index: 2; }
+      body .header .message:hover {
+        cursor: pointer; }
+    body .header .options {
+      position: absolute;
+      display: none;
+      top: 45px;
+      font-size: 16px;
+      box-shadow: 5px 5px 2px grey; }
+      body .header .options div {
+        padding: 8px 5px;
+        text-align: center;
+        border: 1px solid grey; }
+        body .header .options div:hover {
+          background-color: grey;
+          cursor: pointer; }
+  body .body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    body .body .banner {
+      border-left: 5px solid green;
+      padding-left: 15px;
+      margin-bottom: 20px; }
+    body .body .list {
+      display: flex;
+      flex-direction: column; }
+      body .body .list .order {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0px; }
+        body .body .list .order div {
+          width: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
